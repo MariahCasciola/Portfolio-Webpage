@@ -2,3 +2,108 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
+header{
+  background-color: black;
+}
+
+h1, h2, h3 {
+  color:cadetblue;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* .center is for my main portfolio portrait  */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+/* This is to design my image border */
+img {
+  border: 5px solid;
+  
+}
+
+hr {
+  width: 50%;
+}
+
+h1 {
+  font-size:50px;
+}
+
+h2{
+  font-size: 30px;
+}
+
+p {
+  color:purple;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+
+ul {
+  color:purple;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  text-align: center;
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+ol {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:purple;
+  font-size: 20px;
+  text-align: left;
+}
+
+
+
+.wrapper {
+  width:700px;
+  margin: auto;
+}
+
+
+.align-center{
+  text-align: center;
+}
+
+.purple-background {
+  background-color: purple;
+  color: cadet;
+
+}
+
+.dark.background {
+  color: black;
+}
+
+body{
+  margin:0;
+  background-color:dimgrey;
+}
+
+
+/* change box colors and dimentions later*/
+.box {
+  width: 100px;
+  background-color:darkgray;
+  height: 20px;
+  padding: 20px;
+  border: 10px solid cadetblue;
+  margin: 20 px;
+  align-items: center;
+  display: inline-block;
+}
+
+footer{
+  background-color: black;
+  margin: 1px;
+  padding: 50px;
+}
