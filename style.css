@@ -3,9 +3,13 @@ html, body {
   width: 100%;
 }
 
+/* background for my header so it stands out in front of the body backdrop */
+
 header{
   background-color: black;
 }
+
+/* Set a consisten color theme and font with all my titles*/
 
 h1, h2, h3 {
   color:cadetblue;
@@ -25,8 +29,9 @@ h1, h2, h3 {
 /* This is to design my image border */
 img {
   border: 5px solid;
-  
 }
+
+/* This is used to separate my life information from my future projects*/
 
 hr {
   width: 50%;
@@ -40,10 +45,29 @@ h2{
   font-size: 30px;
 }
 
+/* I wanted all of my paragraphs to have the same color separate from the titles, I went with a purple and blue color scheme to match my eyeshadow in the profile picture*/
+
 p {
   color:purple;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
+}
+
+/* centered links for consistency througout the webpage */
+
+a {
+  text-align:center;
+  display: block;
+}
+
+/* adding a colon before the links, and a period after the links */
+
+a::before{
+  content: ":";
+}
+
+a::after{
+  content: ".";
 }
 
 ul {
