@@ -1,133 +1,13 @@
-html, body {
-  height: 100%;
-  width: 100%;
+@media all and (max-width: 480px) {
 }
-
-/* background for my header so it stands out in front of the body backdrop */
-
-header{
-  background-color: black;
-}
-
-/* Set a consisten color theme and font with all my titles*/
-
-h1, h2, h3 {
-  color:cadetblue;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-/* .center is for my main portfolio portrait  */
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-}
-
-/* This is to design my image border */
-img {
-  border: 5px solid;
-}
-
-/* This is used to separate my life information from my future projects*/
-
-hr {
-  width: 50%;
+html {
+  background-image: linear-gradient(#392d69, #b57bee);
 }
 
 h1 {
-  font-size:50px;
+  color: #919bff;
 }
 
-h2{
-  font-size: 30px;
-}
-
-/* I wanted all of my paragraphs to have the same color separate from the titles, I went with a purple and blue color scheme to match my eyeshadow in the profile picture*/
-
-p {
-  color:purple;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 20px;
-}
-
-/* centered links for consistency througout the webpage */
-
-a {
-  text-align:center;
-  display: block;
-}
-
-/* adding a colon before the links, and a period after the links */
-
-a::before{
-  content: ":";
-}
-
-a::after{
-  content: ".";
-}
-
-ul {
-  color:purple;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 20px;
-  text-align: center;
-  list-style-type: square;
-  list-style-position: inside;
-}
-
-ol {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color:purple;
-  font-size: 20px;
-  text-align: left;
-}
-
-
-
-.wrapper {
-  width:700px;
-  margin: auto;
-}
-
-
-.align-center{
-  text-align: center;
-}
-
-.purple-background {
-  background-color: purple;
-  color: cadet;
-
-}
-
-.dark.background {
-  color: black;
-}
-
-body{
-  margin:0;
-  background-color:dimgrey;
-}
-
-
-/* change box colors and dimentions later*/
-.box {
-  width: 100px;
-  background-color:darkgray;
-  height: 20px;
-  padding: 20px;
-  border: 10px solid cadetblue;
-  margin: 20 px;
-  align-items: center;
-  display: inline-block;
-}
-
-footer{
-  background-color: black;
-  margin: 1px;
-  padding: 50px;
+h2 {
+  color: #133a94;
 }
