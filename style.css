@@ -5,6 +5,8 @@ body {
 }
 
 .sectionTitle {
+  display: flex;
+  justify-content: center;
   color: #919bff;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -16,10 +18,28 @@ body {
 }
 
 .projectTitle {
-  color: #392d69;
+  /* color: #392d69; */
   font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: bold;
 }
 
+.bubble {
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 10px 10px #392d69;
+}
+
+.section {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  margin: 5px;
+}
+
+img {
+  border-radius: 15px;
+}
 /* desktop view */
 @media all and (min-width: 480px) {
 }
