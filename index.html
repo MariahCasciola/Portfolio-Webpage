@@ -8,83 +8,132 @@
   </head>
   <body>
     <header>
-      <h1 class="sectionTitle">Mariah Casciola</h1>
-      <h1 class="sectionTitle">Software engineer</h1>
+      <div>
+        <!-- <div class="left-web"></div> -->
+        <h1 class="section-title">Mariah Casciola</h1>
+        <h1 class="section-title">Software engineer</h1>
+      </div>
     </header>
-    <div class="pfp">
-      <img
-        src="images/portfolio-picture.jpg"
-        width="300"
-        class=""
-        alt="Woman with black lipstick, shoulder-length brown wavy hair, and colorful eyeshadow"
-      />
+    <!-- <div class="right-web"></div> -->
+    <div class="flexbox">
+      <div class="container">
+        <img
+          class="image"
+          src="images/portfolio-picture.jpg"
+          width="300"
+          alt="Woman with black lipstick, shoulder-length brown wavy hair, and colorful eyeshadow"
+        />
+          <div>
+          </div>
+        </div>
+      </div>
     </div>
     <main>
-      <h2 class="sectionTitle">About Me</h2>
-      <p class="">
-        My name is Mariah and I am a software engineer, I never knew what I
-        wanted to do with my life, until I fell in love with software
-        enginneering. The truth is, I began programming on a whim. I had grown
-        fatigued from waiting tables and bagging groceries, and needed a way to
-        change my life. I enrolled into a software engineering bootcamp called
-        Thinkful.
-      </p>
-      <article>
-        <div class="">
-          <ul>
-            <li>
-              Since graduating Thinkful, my goal has been to become a front-end
-              developer. I love React, CSS, SASS, and Bootstrap, and I believe
-              my artistic talent can shine through in web design.
-            </li>
-            <li>
-              On my own time, I enjoy drawing in ink, and painting with acrylic
-              on canvas. I have always been very attentive to the detail of my
-              art, and I think this translates very well into being a front-end
-              developer. At heart I am a creator, and my software is my art.
-            </li>
-          </ul>
+      <section class="bubble section">
+        <h2 class="section-title">About Me</h2>
+        <div>
+          <p>
+            My name is Mariah and I am a software engineer, I never knew what I
+            wanted to do with my life, until I fell in love with software
+            enginneering.
+          </p>
+          <p>
+            The truth is, I began programming on a whim. I had grown fatigued
+            from waiting tables and bagging groceries, and needed a way to
+            change my life.
+          </p>
+          <p>
+            I enrolled into a software engineering bootcamp called Thinkful on
+            November 14th, 2022, and graduated on April 15th, 2023.
+          </p>
         </div>
-        <!--hr for separation of about life and project descriptions-->
-        <hr />
-        <h2 class="sectionTitle">Skills</h2>
-        <ul>
-          <li>JavaScript, HTML, CSS, ReactJS, Bootstrap, and SASS.</li>
-          <li>Teamwork,</li>
-        </ul>
-        <h2 class="sectionTitle">Here are a few of my projects</h2>
-
-        <!--I placed the word project in a box so I could place a link to a future project that I completed with thinkful-->
-
-        <ul>
-          <li class="projectTitle">Restaurant Reservations App</li>
-          <ul>
-            <li>
-              Created a REST API and middleware functions to allow users to
-              create, read, update, and delete reservations and update occupied
-              tables to be finished. This API is paired with front-ent that
-              allowed users to interface with the API
-            </li>
-            <li>
-              Technology: JavaScript, React, Node, Express, Knex, HTML5, CSS3,
-              and Puppeteer. Progress/Versions tracked with Git.
-            </li>
-          </ul>
-          <li class="projectTitle">FlashCards App</li>
-          <ul>
-            <li>
+        <div>
+          <p>
+            Since graduating Thinkful, my goal has been to become a front-end
+            developer. I love React, CSS, and Bootstrap, and I believe my
+            artistic talent can shine through in web design.
+          </p>
+          <p>
+            On my own time, I enjoy drawing in ink, and painting with acrylic on
+            canvas. I have always been very attentive to the detail of my art,
+            and I think this translates very well into being a front-end
+            developer. At heart I am a creator, and my software is my art.
+          </p>
+        </div>
+      </section>
+      <section class="bubble section">
+        <h2 class="section-title">Skills</h2>
+        <div>
+          <p>JavaScript, HTML, CSS, ReactJS, and Bootstrap.</p>
+        </div>
+        <div>
+          <p>Teamwork, Diligence, Communication, Detail Oriented</p>
+        </div>
+      </section>
+      <section class="bubble section">
+        <h2 id="projects" class="section-title">My Projects</h2>
+        <div>
+          <h4 class="project-title">
+            Restaurant Reservations App |
+            <a href="https://restaurant-res-frotn-end.onrender.com"
+              >Deployment</a
+            >
+            |
+            <a href="https://github.com/MariahCasciola/restaurant-reservations">
+              GitHub</a
+            >
+          </h4>
+          <p>
+            Created a REST API and middleware functions to allow users to
+            create, read, update, and delete reservations and update occupied
+            tables to be finished upon a guest's departure. This API is paired
+            with front-ent that allowed users to interface with the API
+          </p>
+          <h4>Technology:</h4>
+          <p>
+            JavaScript, React, Node, Express, Knex, HTML5, CSS3, Puppeteer,
+            Bootstrap, and Git.
+          </p>
+        </div>
+        <div>
+          <div>
+            <h4 class="project-title">
+              FlashCards App |
+              <a href="https://mariahs-flashcard-app.onrender.com"
+                >Deployment</a
+              >
+              |
+              <a href="https://github.com/MariahCasciola/FlashCards-A-React-App"
+                >GitHub</a
+              >
+            </h4>
+            <p>
               React app that allows users to create decks, and cards. At the
-              moment the deployed version of this project is just a skeleton,
-            </li>
-          </ul>
-        </ul>
-        <h3 class="sectionTitle">Contact Me@:</h3>
-        <a href="https://www.linkedin.com/in/mariah-casciola/">LinkedIn</a>
-        <a href="https://github.com/MariahCasciola">Github</a>
-      </article>
+              moment the deployed version of this project is just a front-end
+              skeleton, the database is in memory only, and an API is currently
+              in development for this project.
+            </p>
+            <h4>Technology:</h4>
+            <p>JavaScript, React, Bootstrap, and Git</p>
+          </div>
+        </div>
+      </section>
+      <section class="bubble section">
+        <h3 class="section-title">My Links</h3>
+        <p>
+          <a class="link" href="https://www.linkedin.com/in/mariah-casciola/"
+            >My LinkedIn</a
+          >
+        </p>
+        <p>
+          <a class="link" href="https://github.com/MariahCasciola"
+            >My GitHub Profile</a
+          >
+        </p>
+      </section>
     </main>
     <footer>
-      <p>Created using Visual Studio Code and Github</p>
+      <p>Created using VS Code, HTML, CSS, and Github</p>
     </footer>
   </body>
 </html>
