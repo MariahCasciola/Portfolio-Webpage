@@ -9,65 +9,88 @@
   <body>
     <header>
       <div>
-        <h1 class="section-title">Mariah Casciola</h1>
-        <h1 class="section-title">Software engineer</h1>
+        <h1 id="name" class="section-title">Mariah Casciola</h1>
+        <h1 id="job-title" class="section-title">Software engineer</h1>
       </div>
     </header>
     <div class="canvas-image-flex">
-      <canvas id="canvas-one" width="400" height="400"></canvas>
+      <!-- <canvas id="canvas-one" width="400" height="400"></canvas> -->
       <div class="pfp-flexbox-container">
         <img
+          id="portfolio-pic"
           class="image"
           src="images/portfolio-picture.jpg"
           width="300"
           alt="Woman with black lipstick, shoulder-length brown wavy hair, and colorful eyeshadow"
         />
       </div>
-      <canvas id="canvas-two" width="400" height="400"></canvas>
+      <!-- <canvas id="canvas-two" width="400" height="400"></canvas> -->
     </div>
     <main>
-      <section class="bubble section">
+      <section id="about-me-section" class="bubble section">
         <h2 class="section-title">About Me</h2>
         <div>
           <p>
-            My name is Mariah and I am a software engineer, I never knew what I
-            wanted to do with my life, until I fell in love with software
-            enginneering.
+            I am Mariah Casciola, a seasoned professional with an extensive
+            background in customer service and retail. After years of working in
+            these industries without a clear sense of direction, I stumbled upon
+            Thinkful and decided to take a leap of faith into the world of
+            software engineering. Little did I know that this impulsive decision
+            would ignite a profound passion for the craft.
           </p>
           <p>
-            The truth is, I began programming on a whim. I had grown fatigued
-            from waiting tables and bagging groceries, and needed a way to
-            change my life.
+            Through Thinkful's transformative program, I gained a comprehensive
+            understanding of software engineering concepts and practical skills,
+            propelling me toward a fulfilling career in this field. My
+            unconventional journey, coupled with my experience in customer
+            service and retail, equips me with a unique perspective,
+            adaptability, and a relentless drive to deliver user-centered
+            software solutions.
           </p>
           <p>
-            I enrolled into a software engineering bootcamp called Thinkful on
-            November 14th, 2022, and graduated on April 15th, 2023.
+            I am confident that my diverse background and newfound passion make
+            me a qualified software engineer, poised to make a positive impact
+            in the ever-evolving tech industry.
           </p>
         </div>
         <div>
-          <p>
-            Since graduating Thinkful, my goal has been to become a front-end
-            developer. I love React, CSS, and Bootstrap, and I believe my
-            artistic talent can shine through in web design.
-          </p>
           <p>
             On my own time, I enjoy drawing in ink, and painting with acrylic on
             canvas. I have always been very attentive to the detail of my art,
-            and I think this translates very well into being a front-end
-            developer. At heart I am a creator, and my software is my art.
+            and I think this translates very well into being a software
+            engineer. At heart I am a creator, and software is my art.
           </p>
         </div>
       </section>
-      <section class="bubble section">
+      <section id="skills-section" class="bubble section">
         <h2 class="section-title">Skills</h2>
-        <div>
-          <p>JavaScript, HTML, CSS, ReactJS, and Bootstrap.</p>
-        </div>
-        <div>
-          <p>Teamwork, Diligence, Communication, Detail Oriented</p>
+        <div class="skill-flexbox">
+          <ul>
+            <h4>Technical Skills:</h4>
+            <li>JavaScript ES6</li>
+            <li>TypeScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>React.js</li>
+            <li>Bootstrap</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>SQL</li>
+            <li>PostgreSQL</li>
+            <li>Knex</li>
+            <li>Git</li>
+          </ul>
+
+          <ul>
+            <h4>Soft Skills</h4>
+            <li>Teamplayer</li>
+            <li>Diligent</li>
+            <li>Great communicator</li>
+            <li>Detail Oriented</li>
+          </ul>
         </div>
       </section>
-      <section class="bubble section">
+      <section id="projects-section" class="bubble section">
         <h2 id="projects" class="section-title">My Projects</h2>
         <div>
           <h4 class="project-title">
@@ -111,11 +134,13 @@
               in development for this project.
             </p>
             <h4>Technology:</h4>
-            <p>JavaScript, React, Bootstrap, and Git</p>
+            <p>
+              JavaScript ES6, HTML5, CSS3, React.JS, Node.js, Bootstrap, and Git
+            </p>
           </div>
         </div>
       </section>
-      <section class="bubble section">
+      <section id="links-section" class="bubble section">
         <h3 class="section-title">My Links</h3>
         <p>
           <a class="link" href="https://www.linkedin.com/in/mariah-casciola/"
@@ -129,8 +154,8 @@
         </p>
       </section>
     </main>
-    <footer>
-      <p>Created using VS Code, HTML, CSS, and Github</p>
+    <footer id="footer">
+      <p>Created using VS Code, JavaScript ES6, HTML5, CSS3, and Github</p>
     </footer>
     <script src="./index.js"></script>
   </body>

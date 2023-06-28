@@ -67,11 +67,14 @@ p {
 /* desktop view */
 @media all and (min-width: 480px) {
   .section-title {
-    /* padding: 0 0 0 0; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* font-family: "Times New Roman", Times, serif; */
-    /* color: #fff; */
+  }
+
+  .skill-flexbox {
+    display: flex;
+    flex: 30%;
+    justify-content: space-around;
   }
 }
