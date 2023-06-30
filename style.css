@@ -45,7 +45,9 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 5px;
-  margin: 10px;
+  /* margin: 10px; */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .link {
@@ -57,6 +59,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   font-weight: bold;
+}
+
+.projects-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.project-flex-items {
+  flex: 1;
 }
 
 p {
@@ -73,18 +87,6 @@ p {
 
   .about-me-flexbox {
     display: flex;
-  }
-
-  .projects-flexbox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-  }
-
-  .project-flex-items {
-    flex: 1;
   }
 
   .section-flex-container {
@@ -486,5 +488,4 @@ p {
     height: 10px;
     width: 10px;
   } */
-  
 }
