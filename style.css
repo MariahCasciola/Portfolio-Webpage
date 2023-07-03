@@ -49,7 +49,7 @@ body {
   margin-bottom: 20px;
 }
 
-.link {
+.linked-in-git-hub-link {
   color: #392d69;
   font-weight: bold;
 }
@@ -104,11 +104,16 @@ ul {
   align-items: center;
 }
 
+.heart {
+  font-size: 15px;
+}
+
 /* desktop view */
 @media all and (min-width: 480px) {
   .skill-flexbox {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
   }
 
   .about-me-flexbox {
