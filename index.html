@@ -10,14 +10,16 @@
     <header>
       <div>
         <div class="left-web"></div>
-        <h1 id="name" class="section-title">Mariah Casciola</h1>
-        <h1 id="job-title" class="section-title">Software Engineer</h1>
+        <h1 id="name" class="flex-container section-title">Mariah Casciola</h1>
+        <h1 id="job-title" class="flex-container section-title">
+          Software Engineer
+        </h1>
         <div class="right-web"></div>
       </div>
     </header>
-    <div class="canvas-image-flex">
+    <div class="flex-container">
       <!-- <canvas id="canvas-one" width="400" height="400"></canvas> -->
-      <div class="pfp-flexbox-container">
+      <div class="flex-container pfp-flexbox-container">
         <img
           id="portfolio-pic"
           class="image"
@@ -31,9 +33,9 @@
     <main>
       <div class="whole-article">
         <!-- about me section -->
-        <div id="about-me" class="section-flex-container">
+        <div id="about-me">
           <section id="about-me-section" class="bubble">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="flex-container section-title">About Me</h2>
             <p>
               I am Mariah Casciola, a seasoned professional with an extensive
               background in customer service and retail. After years of working
@@ -66,103 +68,80 @@
           </section>
         </div>
         <!-- skills section -->
-        <div id="skills" class="section-flex-container">
+        <div id="skills">
           <section id="skills-section" class="bubble">
-            <h2 class="section-title">Code Stack</h2>
-            <div class="code-stack-flexbox">
-              <!-- each anchor tag contains an icon and a link to each code stack item -->
-              <!-- JavaScript -->
-              <div class="code-stack-flexbox-items">
-                <a
-                  href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript"
-                  ><img src="images/icons/icons8-javascript-48.png"
-                /></a>
-              </div>
-              <!-- TypeScript -->
-              <div class="code-stack-flexbox-items">
-                <a href="https://www.typescriptlang.org/"
-                  ><img src="images/icons/icons8-typescript-48.png"
-                /></a>
-              </div>
-              <!-- HTML -->
-              <div class="code-stack-flexbox-items">
-                <a href="https://www.hostinger.com/tutorials/what-is-html"
-                  ><img src="images/icons/icons8-html-48.png"
-                /></a>
-              </div>
-              <!-- CSS -->
-              <div class="code-stack-flexbox-items">
-                <a
-                  href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS"
-                  ><img src="images/icons/icons8-css-48.png"
-                /></a>
-              </div>
-              <!-- React -->
-              <div class="code-stack-flexbox-items">
-                <a href="https://react.dev/"
-                  ><img src="images/icons/icons8-react-48.png"
-                /></a>
-              </div>
-              <!-- Node.js -->
-              <div class="code-stack-flexbox-items">
-                <a href="https://nodejs.org/en/about">
-                  <img src="images/icons/icons8-node-js-48.png"
-                /></a>
-              </div>
-              <!-- Express.js -->
-              <div class="code-stack-flexbox-items">
-                <a href="https://expressjs.com/">
-                  <img src="images/icons/icons8-express-js-48.png"
-                /></a>
-              </div>
-              <!-- PostgreSQL -->
-              <div class="code-stack-flexbox-items">
-                <a href="https://www.postgresql.org/">
-                  <img src="images/icons/icons8-postgresql-48.png"
-                /></a>
-              </div>
-              <!-- Git -->
-              <div class="code-stack-flexbox-items">
-                <a href="https://git-scm.com/">
-                  <img
-                    width="48"
-                    height="48"
-                    src="images/icons/icons8-git-48.png"
-                  />
-                </a>
-              </div>
-              <!-- Mocha -->
-              <div class="code-stack-flexbox-items">
-                <a href="https://mochajs.org/">
-                  <img
-                    width="48"
-                    height="48"
-                    src="images/icons/mochajs-icon.svg"
-                  />
-                </a>
-              </div>
-              <!-- Chai -->
-              <div class="code-stack-flexbox-items">
-                <a href="https://www.chaijs.com/">
-                  <img width="48" height="48" src="images/icons/chai.png" />
-                </a>
-              </div>
-              <!-- Jest -->
-              <div class="code-stack-flexbox-items">
-                <a href="https://jestjs.io/">
-                  <img
-                    src="images/icons/icons8-jest-can-collect-code-coverage-information-from-entire-projects-48.png"
-                  />
-                </a>
-              </div>
+            <h2 class="flex-container section-title">Code Stack</h2>
+            <div class="flex-container code-stack-flexbox">
+              <!-- JavaScript icon-->
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript"
+                ><img src="images/icons/icons8-javascript-48.png"
+              /></a>
+              <!-- TypeScript icon-->
+              <a href="https://www.typescriptlang.org/"
+                ><img src="images/icons/icons8-typescript-48.png"
+              /></a>
+              <!-- HTML icon-->
+              <a href="https://www.hostinger.com/tutorials/what-is-html"
+                ><img src="images/icons/icons8-html-48.png"
+              /></a>
+              <!-- CSS icon-->
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS"
+                ><img src="images/icons/icons8-css-48.png"
+              /></a>
+              <!-- React icon-->
+              <a href="https://react.dev/"
+                ><img src="images/icons/icons8-react-48.png"
+              /></a>
+              <!-- Node.js icon-->
+              <a href="https://nodejs.org/en/about">
+                <img src="images/icons/icons8-node-js-48.png"
+              /></a>
+              <!-- Express.js icon-->
+              <a href="https://expressjs.com/">
+                <img src="images/icons/icons8-express-js-48.png"
+              /></a>
+              <!-- PostgreSQL icon-->
+              <a href="https://www.postgresql.org/">
+                <img src="images/icons/icons8-postgresql-48.png"
+              /></a>
+              <!-- Git icon-->
+              <a href="https://git-scm.com/">
+                <img
+                  width="48"
+                  height="48"
+                  src="images/icons/icons8-git-48.png"
+                />
+              </a>
+              <!-- Mocha icon-->
+              <a href="https://mochajs.org/">
+                <img
+                  width="48"
+                  height="48"
+                  src="images/icons/mochajs-icon.svg"
+                />
+              </a>
+              <!-- Chai icon-->
+              <a href="https://www.chaijs.com/">
+                <img width="48" height="48" src="images/icons/chai.png" />
+              </a>
+              <!-- Jest icon-->
+              <a href="https://jestjs.io/">
+                <img
+                  src="images/icons/icons8-jest-can-collect-code-coverage-information-from-entire-projects-48.png"
+                />
+              </a>
             </div>
           </section>
         </div>
         <!-- My Projects section -->
-        <div id="projects" class="section-flex-container">
+        <div id="projects">
           <section id="projects-section" class="bubble">
-            <h2 id="projects" class="section-title">My Projects</h2>
-            <div class="projects-flexbox">
+            <h2 id="projects" class="flex-container section-title">
+              My Projects
+            </h2>
+            <div class="flex-container projects-flexbox">
               <!-- Reservation Project -->
               <div class="project-flex-items">
                 <h4 class="project-title">
@@ -259,9 +238,9 @@
           </section>
         </div>
         <!-- links section -->
-        <div id="links" class="section-flex-container">
+        <div id="links">
           <section id="links-section" class="bubble">
-            <h3 class="section-title">My Links</h3>
+            <h3 class="flex-container section-title">My Links</h3>
             <p>
               <a
                 class="linked-in-git-hub-link"
@@ -282,7 +261,7 @@
     </main>
     <footer id="footer" class="footer">
       <p>Created with</p>
-      <div class="tools">
+      <div class="flex-container tools">
         <img id="js-icon" src="images/icons/icons8-vs-code-48.png" />
         <img src="images/icons/icons8-javascript-48.png" />
         <img src="images/icons/icons8-html-48.png" />

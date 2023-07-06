@@ -4,9 +4,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.section-title {
+.flex-container {
   display: flex;
   justify-content: center;
+}
+
+.section-title {
   color: #919bff;
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 15px;
@@ -15,30 +18,18 @@ body {
 }
 
 .pfp-flexbox-container {
-  display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-/* flex container for image and both canvases */
-.canvas-image-flex {
-  display: flex;
-  justify-content: center;
 }
 
 /* image styling */
 .image {
-  border-radius: 10px;
+  border-radius: 15px;
   border-style: solid;
   border-color: #392d69;
   border-width: 5px;
   margin: 0;
   max-width: 90%;
 }
-
-/* .container:hover .ms-muffet-overlay {
-  opacity: 1;
-} */
 
 /* text bubble design */
 .bubble {
@@ -54,14 +45,8 @@ body {
 }
 
 .code-stack-flexbox {
-  display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.code-stack-flexbox-items {
-  /* flex: 1; */
 }
 
 .project-title {
@@ -71,10 +56,8 @@ body {
 }
 
 .projects-flexbox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 15px;
 }
 
@@ -94,10 +77,12 @@ p {
   margin: 10px;
 }
 
+/* gets rid of bullets in ul tags */
 ul {
   list-style-type: none;
 }
 
+/* replaces bullets in li tags  */
 .heart {
   font-size: 15px;
 }
@@ -117,23 +102,14 @@ ul {
   left: 0;
 }
 
+/* for tools in footer*/
 .tools {
-  display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
 /* desktop view */
 @media all and (min-width: 480px) {
-  .about-me-flexbox {
-    display: flex;
-  }
-
-  .section-flex-container {
-    flex: 1;
-  }
-
   .whole-article {
     display: flex;
     flex-direction: column;
@@ -142,8 +118,9 @@ ul {
   }
 }
 
+/* larger desktop view */
 @media all and (min-width: 1200px) {
-  /* web stuff */
+  /* left-web */
   .left-web {
     justify-content: flex-end;
     box-shadow: 200px 10px 0 0 rgba(255, 255, 255, 1),
