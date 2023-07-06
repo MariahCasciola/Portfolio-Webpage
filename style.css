@@ -20,6 +20,7 @@ body {
   align-items: center;
 }
 
+/* flex container for image and both canvases */
 .canvas-image-flex {
   display: flex;
   justify-content: center;
@@ -31,6 +32,8 @@ body {
   border-style: solid;
   border-color: #392d69;
   border-width: 5px;
+  margin: 0;
+  max-width: 90%;
 }
 
 /* .container:hover .ms-muffet-overlay {
@@ -47,11 +50,18 @@ body {
   padding-bottom: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-right: 10px;
 }
 
-.link {
-  color: #392d69;
-  font-weight: bold;
+.code-stack-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.code-stack-flexbox-items {
+  /* flex: 1; */
 }
 
 .project-title {
@@ -79,19 +89,43 @@ body {
   margin-bottom: 20px;
 }
 
-
 p {
   text-indent: 20px;
   margin: 10px;
 }
 
+ul {
+  list-style-type: none;
+}
+
+.heart {
+  font-size: 15px;
+}
+
+.linked-in-git-hub-link {
+  color: #392d69;
+  font-weight: bold;
+}
+
+.footer {
+  color: white;
+  background-color: #392d69;
+  font-size: 18px;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 /* desktop view */
 @media all and (min-width: 480px) {
-  .skill-flexbox {
-    display: flex;
-    justify-content: space-around;
-  }
-
   .about-me-flexbox {
     display: flex;
   }
@@ -103,11 +137,14 @@ p {
   .whole-article {
     display: flex;
     flex-direction: column;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
+}
 
-  /* .left-web {
+@media all and (min-width: 1200px) {
+  /* web stuff */
+  .left-web {
     justify-content: flex-end;
     box-shadow: 200px 10px 0 0 rgba(255, 255, 255, 1),
       200px 20px 0 0 rgba(255, 255, 255, 1),
@@ -494,5 +531,5 @@ p {
       410px 500px 0 0 rgba(255, 255, 255, 1);
     height: 10px;
     width: 10px;
-  } */
+  }
 }
