@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mariah Casciola</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="ms-muffet.css" type="text/css">
+    <!-- <link href="style.scss" rel="stylesheet" type="text/css" /> -->
   </head>
   <body>
     <header>
@@ -18,18 +18,15 @@
         <div class="right-web"></div>
       </div>
     </header>
-    <div class="flex-container">
-      <!-- <canvas id="canvas-one" width="400" height="400"></canvas> -->
-      <div class="flex-container pfp-flexbox-container">
-        <img
-          id="portfolio-pic"
-          class="image"
-          src="images/portfolio-picture.jpg"
-          width="300"
-          alt="Woman with black lipstick, shoulder-length brown wavy hair, and colorful eyeshadow"
-        />
-      </div>
-      <!-- <canvas id="canvas-two" width="400" height="400"></canvas> -->
+    <div class="flex-container container">
+      <img
+        id="portfolio-pic"
+        class="image"
+        src="images/portfolio-picture.jpg"
+        width="300"
+        alt="Woman with black lipstick, shoulder-length brown wavy hair, and colorful eyeshadow"
+      />
+      <div class="ms-muffet-overlay"></div>
     </div>
     <main>
       <div class="whole-article">
@@ -101,7 +98,7 @@
                 ><img src="images/icons/icons8-css-48.png" alt="css icon"
               /></a>
               <!-- Bootstrap icon-->
-                <a
+              <a
                 href="https://getbootstrap.com/"
                 aria-label="Read more about Bootstrap"
                 ><img src="images/icons/icons8-bootstrap-48.png" alt="css icon"
@@ -264,6 +261,39 @@
                 <p>
                   JavaScript ES6, DOM Manipulation, HTML5, Bootstrap 5.3.0,
                   Chai, VS Code, and Git.
+                </p>
+              </div>
+              <!-- We Love Movies Project-->
+              <div class="project-flex-items">
+                <h4 class="project-title">
+                  We Love Movies API |
+                  <a
+                    class="project-link"
+                    href="https://we-love-movies-1pzh.onrender.com/movies"
+                    aria-label="view live we love movies api"
+                    >Deployment</a
+                  >
+                  |
+                  <a
+                    class="project-link"
+                    href="https://github.com/MariahCasciola/We-Love-Movies"
+                    aria-label="view github of restaurant-reservations"
+                  >
+                    GitHub</a
+                  >
+                </h4>
+                <p>
+                  I am a cinephile with a love for all sorts of niche movies. I
+                  love Studio Ghibli`s Spirited Away, BladeRunner, Rear Window,
+                  Spiderman: Into the Spider-Verse, and more. Please enjoy this
+                  list of movies I have compiled in this API! Sit back, grab
+                  some popcorn, and enjoy!
+                </p>
+                <h4 class="project-title">Technology:</h4>
+                <p>
+                  JavaScript ES6, Node.js, Express.js PostgreSQL, Knex,
+                  ElephantSQL, Render, Postman, JSON viewer, SuperTest, and
+                  VSCode.
                 </p>
               </div>
               <!-- FlashCards Project -->
