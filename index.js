@@ -1,8 +1,16 @@
-const canvasOne = document.querySelector("#canvas-one");
-const canvasTwo = document.querySelector("#canvas-two");
-const ctxOne = canvasOne.getContext("2d");
-const ctxTwo = canvasTwo.getContext("2d");
+// const width = document.documentElement.clientWidth;
+const lookAtWebs = document.querySelectorAll(".hover-message");
 
-const jsIconHover = document.querySelector("#js-icon");
+if (width >= 1200) {
+    // TODO empty inner text?
+  lookAtWebs.innerText = `uhu uhu uhu, purple is a good color on you`;
+//   lookAtWebs.classList.add("hover-message");
+//   lookAtWebs.classList.add("flex-container");
+  const main = document.querySelector("main");
+  main.prepend(lookAtWebs);
+}
 
-// TODO: create onFocus or onBlur event over personal profile image
+// if (width < 1200) {
+//   // remove child
+//   main.removeChild(lookAtWebs);
+// }
