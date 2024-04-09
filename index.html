@@ -17,7 +17,7 @@
       <div class="flex-container container">
         <img
           id="portfolio-pic"
-          class="image"
+          class="image border"
           src="images/portfolio-picture.jpg"
           width="300"
           alt="Woman with black lipstick, shoulder-length brown wavy hair, and colorful eyeshadow"
@@ -73,6 +73,7 @@
             <div class="flex-container code-stack-flexbox">
               <!-- JavaScript icon-->
               <a
+                id="javascript-icon"
                 href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript"
                 aria-label="Read more about JavaScript"
                 ><img
@@ -191,221 +192,75 @@
               My Projects
             </h2>
             <div class="flex-container projects-flexbox">
+              <!-- Tic Tac Toe project -->
+              <h4 class="flex-container project-title">
+                Single Player Tic Tac Toe
+              </h4>
+              <a
+                href="https://single-player-tic-tac-toe.vercel.app/"
+                aria-label="Take a look at my tic-tac-toe project"
+              >
+                <img
+                  id="tic-tac-toe-pic"
+                  class="border"
+                  src="images/project-pics/tic-tac-toe.png"
+                  width="300"
+                  alt="Screenshot of Single Tic-tac-toe application"
+                />
+              </a>
               <!-- Reservation Project -->
               <div id="reservations-app" class="project-flex-items">
-                <h4 class="project-title">
-                  Restaurant Reservations App |
-                  <a
-                    class="project-link"
-                    href="https://restaurant-res-frotn-end.onrender.com"
-                    aria-label="view live restaurant-reservations website"
-                    >Deployment</a
-                  >
-                  |
-                  <a
-                    class="project-link"
-                    href="https://github.com/MariahCasciola/restaurant-reservations"
-                    aria-label="view github of restaurant-reservations"
-                  >
-                    GitHub</a
-                  >
+                <h4 class="flex-container project-title">
+                  Restaurant Reservations App
                 </h4>
-                <p>
-                  I created a RESTful API that allows users to create, read,
-                  update, and delete reservations and update occupied tables
-                  upon a guest's departure. I have implemented middleware
-                  functions to warn API users when they have made a bad request.
-                  This API connects to a user interface composed of React
-                  components designed with CSS and Bootstrap.
-                </p>
-                <h4 class="project-title">Technology:</h4>
-                <p>
-                  JavaScript ES6, React.js, Node.js, Express.js, Knex, HTML5,
-                  CSS3, Puppeteer, Bootstrap 5.3.0, VS Code, and Git.
-                </p>
-              </div>
-              <!-- Decoder Ring Project -->
-              <div id="decoder-ring" class="project-flex-items">
-                <h4 class="project-title">
-                  Decorder Ring |
-                  <a
-                    class="project-link"
-                    href="https://mariahcasciola.github.io/Decoder-ring/"
-                    aria-label="view decoder-ring live website"
-                    >Deployment</a
-                  >
-                  |
-                  <a
-                    class="project-link"
-                    href="https://github.com/MariahCasciola/Decoder-ring"
-                    aria-label="view github of decoder-ring"
-                    >GitHub</a
-                  >
-                </h4>
-                <p>
-                  I wrote three encoding and decoding JavaScript algorithms:
-                  Caesar Shift, Polybius Square, and Substitution Cipher.
-                </p>
-                <ul>
-                  <li>
-                    <span class="heart">&#128420;</span>Caesar will shift the
-                    alphabet by a number a user specifies to encode a message.
-                  </li>
-                  <li>
-                    <span class="heart">&#128420;</span>Polybius takes each
-                    letter in the alphabet and assigns a two-digit coordinate to
-                    each letter that will translate a message into a string of
-                    numbers.
-                  </li>
-                  <li>
-                    <span class="heart">&#128420;</span>Substitution Cipher
-                    requires a user to provide an alphabet of 26 characters to
-                    replace the English alphabet to encode and decode their
-                    messages.
-                  </li>
-                </ul>
-
-                <h4 class="project-title">Technology:</h4>
-                <p>
-                  JavaScript ES6, DOM Manipulation, HTML5, Bootstrap 5.3.0,
-                  Chai, VS Code, and Git.
-                </p>
+                <a
+                  href="https://restaurant-res-frotn-end.onrender.com/dashboard"
+                  aria-label="A link to my Restaurant reservations app"
+                >
+                  <img
+                    src="./images/project-pics/reservations.png"
+                    class="border"
+                    width="300"
+                    alt="Screencap of a Restaurant Reservations application"
+                /></a>
               </div>
               <!-- We Love Movies Project-->
               <div id="we-love-movies" class="project-flex-items">
-                <h4 class="project-title">
-                  We Love Movies API |
-                  <a
-                    class="project-link"
-                    href="https://we-love-movies-1pzh.onrender.com/movies"
-                    aria-label="view live we love movies api"
-                    >Deployment</a
-                  >
-                  |
-                  <a
-                    class="project-link"
-                    href="https://github.com/MariahCasciola/We-Love-Movies"
-                    aria-label="view github of restaurant-reservations"
-                  >
-                    GitHub</a
-                  >
-                </h4>
-                <p>
-                  I am a cinephile with a love for all sorts of niche movies. I
-                  love Studio Ghibli`s Spirited Away, BladeRunner, Rear Window,
-                  Spiderman: Into the Spider-Verse, and more. Please enjoy this
-                  list of movies I have compiled in this API! Sit back, grab
-                  some popcorn, and enjoy!
-                </p>
-                <h4 class="project-title">Technology:</h4>
-                <p>
-                  JavaScript ES6, Node.js, Express.js PostgreSQL, Knex,
-                  ElephantSQL, Render, Postman, JSON viewer, SuperTest, and
-                  VSCode.
-                </p>
+                <h4 class="flex-container project-title">We Love Movies API</h4>
+                <a
+                  href="https://we-love-movies-ui-9f0n.onrender.com/"
+                  aria-label="A link to my We Love Movies application"
+                  ><img
+                    class="border"
+                    width="300"
+                    src="./images/project-pics/we-love-movies.png"
+                /></a>
               </div>
-              <!-- FlashCards Project -->
-              <div id="flashcards-app" class="project-flex-items">
-                <h4 class="project-title">
-                  FlashCards App |
-                  <a
-                    class="project-link"
-                    href="https://mariahs-flashcard-app.onrender.com"
-                    aria-label="view live flashcard-app website"
-                    >Deployment</a
-                  >
-                  |
-                  <a
-                    class="project-link"
-                    href="https://github.com/MariahCasciola/FlashCards-A-React-App"
-                    aria-label="view code of flash-card website on github"
-                    >GitHub</a
-                  >
-                </h4>
-                <p>
-                  I made a React app that allows users to create decks and
-                  cards. Currently, the deployed version of this project is UI,
-                  the database is in memory only, and an API is currently in
-                  development for this project.
-                </p>
-                <h4 class="project-title">Technology:</h4>
-                <p>
-                  JavaScript ES6, HTML5, CSS3, React.js, Node.js, Bootstrap
-                  5.3.0, Jest, VS Code, and Git.
-                </p>
+              <!-- Art Gallery  -->
+              <div id="local-library-project" class="project-flex-items">
+                <h4 class="flex-container project-title">Art Gallery</h4>
+                <a
+                  href="https://art-gallery-gamma-one.vercel.app/"
+                  aria-label="A link to my Art Gallery application"
+                  ><img
+                    class="border"
+                    width="300"
+                    src="./images/project-pics/art-gallery.png"
+                /></a>
               </div>
               <!-- Local Library project -->
               <div id="local-library-project" class="project-flex-items">
-                <h4 class="project-title">
-                  Local Library Project |
-                  <a
-                    class="project-link"
-                    href="https://local-library-project-doj57c829-mariahcasciola.vercel.app/"
-                    aria-label="view live Local-Library-Project website"
-                    >Deployment</a
-                  >
-                  |
-                  <a
-                    class="project-link"
-                    href="https://github.com/MariahCasciola/Local-Library-Project"
-                    aria-label="view github of Local-Library-Project"
-                  >
-                    GitHub</a
-                  >
+                <h4 class="flex-container project-title">
+                  Local Library Project
                 </h4>
-                <p>
-                  This project displays data from a mock Local Library. Using a
-                  boilerplate UI, I created higher-order functions to correctly
-                  display the information about the library's books, authors,
-                  and borrowers. I wrote fourteen different algorithms to
-                  manipulate three arrays.
-                </p>
-                <h4 class="project-title">Technology:</h4>
-                <p>JavaScript ES6, HTML5, CSS3, Chai, VS Code, and Git.</p>
-              </div>
-              <!-- Tic Tac Toe project -->
-              <div
-                id="single-player-tic-tac-toe-project"
-                class="project-flex-items"
-              >
-                <h4 class="project-title">
-                  Single Player Tic Tac Toe Project |
-                  <a
-                    class="project-link"
-                    href="https://single-player-tic-tac-toe.vercel.app/"
-                    aria-label="view live single-player-tic-tac-toe-Project website"
-                    >Deployment</a
-                  >
-                  |
-                  <a
-                    class="project-link"
-                    href="https://github.com/MariahCasciola/single-player-tic-tac-toe"
-                    aria-label="view github of single-player-tic-tac-toe project"
-                  >
-                    GitHub</a
-                  >
-                </h4>
-                <div class="flex-container">
-                  <a
-                    href="https://single-player-tic-tac-toe.vercel.app/"
-                    aria-label="Take a look at my tic-tac-toe project"
-                  >
-                    <img
-                      id="tic-tac-toe-pic"
-                      class="image"
-                      src="images/project-pics/tic-tac-toe.png"
-                      width="300"
-                      alt="neon tic-tac-toe grid with a black cat underneath, text reads: Meow! It's a cat game!"
-                    />
-                  </a>
-                </div>
-                <p>
-                  This program plays tic-tac-toe against one human player and
-                  looks for conditions to win against a player, lose against a
-                  player, or force a cat game.
-                </p>
-                <h4 class="project-title">Technology:</h4>
-                <p>JavaScript ES6, React.js, SASS, and CSS.</p>
+                <a
+                  href="https://local-library-project-nine.vercel.app/"
+                  aria-label="A link to my Local Library application"
+                  ><img
+                    class="border"
+                    width="300"
+                    src="./images/project-pics/local-library.png"
+                /></a>
               </div>
             </div>
           </section>
