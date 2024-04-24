@@ -20,6 +20,7 @@ body {
 /* can be used for parent of ms-muffet-overlay */
 .container {
   color: white;
+  padding-bottom: 1rem;
 }
 
 /* image styling */
@@ -28,7 +29,7 @@ body {
   height: auto;
   border-width: 5px;
   margin: 0;
-  max-width: 16vh;
+  max-width: 12rem;
 }
 
 .border {
@@ -52,6 +53,8 @@ body {
   border-radius: 15px;
   background: rgb(50, 32, 70);
   box-shadow: 10px 10px black;
+  margin: 1rem 1rem;
+  min-width: 10rem;
 }
 
 /* code stack */
@@ -117,8 +120,6 @@ p {
   .whole-article {
     display: flex;
     flex-direction: column;
-    /* margin-left: 20%; */
-    /* margin-right: 20%; */
   }
 
   .row {
@@ -134,14 +135,8 @@ p {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 20rem));
   }
 
-  .item1 {
-    flex: 6;
-    padding: 1rem;
-  }
-
-  .item2 {
-    flex: 1;
-    padding: 1rem;
+  .bubble {
+    margin: 0 3rem 2rem 3rem;
   }
 
   .project-flexbox {
@@ -159,8 +154,18 @@ p {
   display: none;
 }
 
+@media all and (min-width: 750px) {
+  .whole-article {
+    margin: 0 15rem 0 15rem;
+  }
+}
+
 /* larger desktop view */
 @media all and (min-width: 1200px) {
+  .whole-article {
+    margin: 0 20rem 0 20rem;
+  }
+
   #about-me-section {
     margin-top: 0;
   }
@@ -886,5 +891,11 @@ p {
       275px 450px 0 0 rgba(0, 0, 0, 1);
     height: 10px;
     width: 10px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .whole-article {
+    margin: 0 20rem 0 20rem;
   }
 }
