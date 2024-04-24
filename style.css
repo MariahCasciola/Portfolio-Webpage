@@ -1,3 +1,10 @@
+:root {
+  --darkest-color: #000;
+  --medium-color: #392d69;
+  --highlight: #b57bee;
+  --periwinkle: #919bff;
+}
+
 /* moblie first */
 body {
   background-image: linear-gradient(rgb(0, 0, 0), #392d69, #b57bee);
@@ -57,6 +64,11 @@ body {
   min-width: 10rem;
 }
 
+.bubble-two {
+  background-color: var(--periwinkle);
+  box-shadow: 10px 10px var(--darkest-color);
+}
+
 /* code stack */
 
 .code-stack-flexbox {
@@ -68,6 +80,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   font-weight: bold;
+  color: var(--darkest-color)
 }
 
 .projects-flexbox {
@@ -111,6 +124,12 @@ p {
   flex-wrap: wrap;
 }
 
+.whole-article {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 100rem));
+  margin: 0 5rem 0 5rem;
+}
+
 /* desktop view */
 @media all and (min-width: 480px) {
   .flex {
@@ -118,8 +137,7 @@ p {
   }
 
   .whole-article {
-    display: flex;
-    flex-direction: column;
+    margin: 0 5rem 0 5rem;
   }
 
   .row {
@@ -133,10 +151,6 @@ p {
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 20rem));
-  }
-
-  .bubble {
-    margin: 0 3rem 2rem 3rem;
   }
 
   .project-flexbox {
@@ -154,18 +168,14 @@ p {
   display: none;
 }
 
-@media all and (min-width: 750px) {
+@media all and (min-width: 780px) {
   .whole-article {
-    margin: 0 15rem 0 15rem;
+    /* margin: 0 10rem 0 10rem; */
   }
 }
 
 /* larger desktop view */
 @media all and (min-width: 1200px) {
-  .whole-article {
-    margin: 0 20rem 0 20rem;
-  }
-
   #about-me-section {
     margin-top: 0;
   }
@@ -894,8 +904,8 @@ p {
   }
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 2000px) {
   .whole-article {
-    margin: 0 20rem 0 20rem;
+    /* margin: 0 20rem 0 20rem; */
   }
 }
