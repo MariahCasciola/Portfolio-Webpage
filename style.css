@@ -1,6 +1,9 @@
 :root {
   --darkest-color: #000;
   --medium-color: #392d69;
+  --deep-color: #2e225c;
+  --bubble-color: rgb(50, 32, 70);
+
   --highlight: #b57bee;
   --periwinkle: #919bff;
 
@@ -15,6 +18,7 @@
 body {
   background-image: linear-gradient(rgb(0, 0, 0), #392d69, #b57bee);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 .center {
@@ -25,28 +29,21 @@ body {
 .section-title {
   color: #919bff;
   font-family: Arial, Helvetica, sans-serif;
-  padding-top: 0.938rem;
-  padding-bottom:0.313rem;
-  margin: 0;
 }
 
-/* can be used for parent of ms-muffet-overlay */
+/* Container to hover over to show MsMuffet */
 .container {
-  color: white;
   padding-bottom: 1rem;
 }
 
 /* image styling */
 .image {
-  display: block;
-  height: auto;
-  border-width:0.313rem;
-  margin: 0;
+  border-width: 0.313rem;
   max-width: 12rem;
 }
 
 .border {
-  border-color: #392d69;
+  border-color: var(--medium-color);
   border-radius: 0.938rem;
   border-style: solid;
 }
@@ -56,30 +53,26 @@ body {
   opacity: 1;
 }
 
-.focus-here {
-  color: white;
-}
-
 /* text bubble design */
 .bubble {
   color: white;
   border-radius: 0.938rem;
   padding: 1rem;
-  background: rgb(50, 32, 70);
-  box-shadow:0.625rem 0.625rem black;
+  background: var(--bubble-color);
+  box-shadow: 0.625rem 0.625rem black;
   margin: 1rem 1rem;
   min-width: 10rem;
 }
 
 .bubble-two {
   background-color: var(--periwinkle);
-  box-shadow:0.625rem 0.625rem var(--darkest-color);
+  box-shadow: 0.625rem 0.625rem var(--darkest-color);
 }
 
 /* code stack */
 
-.code-stack-flexbox {
-  align-items: center;
+.wrap {
+  /* align-items: center; */
   flex-wrap: wrap;
 }
 
@@ -96,31 +89,18 @@ body {
   padding: 0.938rem;
 }
 
-.project-flex-items {
-  padding: 2rem;
-  margin: 1rem;
-}
-
-.project-link {
-  color: #919bff;
-}
-
 p {
   text-indent: 1.25rem;
-  margin:0.625rem;
+  margin: 0.625rem;
 }
 
-.linked-in-git-hub-link {
-  color: white;
-  font-weight: bold;
-}
-
-.footer {
+footer {
   color: white;
   background-color: #2e225c;
   font-size: 1.125rem;
   text-align: center;
-  position: absolute;
+  margin: 0.5rem 0 0 0;
+  padding: 0.5rem;
   right: 0;
   left: 0;
 }
@@ -163,11 +143,6 @@ p {
   .project-flexbox {
     margin: 2rem;
   }
-
-  .project-flex-items {
-    padding: 2rem;
-    margin: 1rem;
-  }
 }
 
 /* does not display hover message */
@@ -177,10 +152,6 @@ p {
 
 /* larger desktop view */
 @media all and (min-width: 1200px) {
-  #about-me-section {
-    margin-top: 0;
-  }
-
   /* displays hover message*/
   .disappear {
     display: flex;
