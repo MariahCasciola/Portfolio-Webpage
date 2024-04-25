@@ -69,7 +69,7 @@ body {
 }
 
 .bubble-two {
-  background-color: var(--legs-eyes);
+  background-color: var(--highlight);
   box-shadow: 0.625rem 0.625rem var(--darkest-color);
   border-radius: 4rem;
 }
@@ -100,8 +100,8 @@ p {
 }
 
 footer {
-  color: white;
-  background-color: var(--deep-color);
+  color: var(--periwinkle);
+  background-color: var(--bubble-color);
   font-size: 1.125rem;
   text-align: center;
   margin: 0.5rem 0 0 0;
