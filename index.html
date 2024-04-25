@@ -8,31 +8,28 @@
   </head>
   <body>
     <header>
-      <div>
-        <div class="left-web"></div>
-        <h1 id="name" class="flex-container section-title">Mariah Casciola</h1>
-        <h1 id="job-title" class="flex-container section-title">
-          Software Engineer
-        </h1>
-        <div class="right-web"></div>
+      <div class="left-web"></div>
+      <h1 id="name" class="center section-title">Mariah Casciola</h1>
+      <h1 id="job-title" class="center section-title">Software Engineer</h1>
+      <div class="center container">
+        <img
+          id="portfolio-pic"
+          class="image border"
+          src="images/portfolio-picture.jpg"
+          alt="Woman with black lipstick, shoulder-length brown wavy hair, and colorful eyeshadow"
+        />
+        <div class="ms-muffet-overlay"></div>
+        <div class="bake-sale-sign"></div>
       </div>
     </header>
-    <div class="flex-container container">
-      <img
-        id="portfolio-pic"
-        class="image"
-        src="images/portfolio-picture.jpg"
-        width="300"
-        alt="Woman with black lipstick, shoulder-length brown wavy hair, and colorful eyeshadow"
-      />
-      <div class="ms-muffet-overlay"></div>
-    </div>
     <main>
-      <div class="whole-article">
+      <!-- queue for user to focus on a web -->
+      <h2 class="center hover-message disappear">: Hover over a web :</h2>
+      <div class="whole-article center">
         <!-- about me section -->
         <div id="about-me">
           <section id="about-me-section" class="bubble">
-            <h2 class="flex-container section-title">About Me</h2>
+            <h2 class="center section-title">About Me</h2>
             <p>
               I am Mariah Casciola, a seasoned professional with an extensive
               customer service and retail background. After years of working in
@@ -56,50 +53,49 @@
               industry.
             </p>
             <p>
-              I enjoy drawing, painting, gardening, and the occasional video
-              game in my free time. I casually play D&D, Magic: The Gathering,
-              and other tabletop games. At heart, I am a creator, and software
-              is my art.
+              I enjoy programming, drawing, painting, gardening, and the
+              occasional video game in my free time. I casually play D&D, Magic:
+              The Gathering, and other tabletop games. At heart, I am a creator,
+              and software is my art.
             </p>
           </section>
         </div>
         <!-- code stack section -->
         <div id="skills">
           <section id="skills-section" class="bubble">
-            <h2 class="flex-container section-title">Code Stack</h2>
-            <div class="flex-container code-stack-flexbox">
+            <h2 class="center section-title">Code Stack</h2>
+            <div class="center wrap">
               <!-- JavaScript icon-->
               <a
+                id="javascript-icon"
                 href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript"
                 aria-label="Read more about JavaScript"
-                ><img
-                  src="images/icons/icons8-javascript-48.png"
-                  alt="javascript icon"
+                ><img src="images/icons/icons8-js.svg" alt="javascript icon"
               /></a>
               <!-- TypeScript icon-->
               <a
                 href="https://www.typescriptlang.org/"
                 aria-label="Read more about TypeScript"
                 ><img
-                  src="images/icons/icons8-typescript-48.png"
+                  src="images/icons/icons8-typescript.svg"
                   alt="typescript icon"
               /></a>
               <!-- HTML icon-->
               <a
                 href="https://www.hostinger.com/tutorials/what-is-html"
                 aria-label="Read more about HTML"
-                ><img src="images/icons/icons8-html-48.png" alt="html icon"
+                ><img src="images/icons/icons8-html.svg" alt="html icon"
               /></a>
               <!-- CSS icon-->
               <a
                 href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS"
                 aria-label="Read more about CSS"
-                ><img src="images/icons/icons8-css-48.png" alt="css icon"
+                ><img src="images/icons/icons8-css.svg" alt="css icon"
               /></a>
               <!-- SASS -->
               <a href="https://sass-lang.com/" aria-label="Read more about SASS"
                 ><img
-                  src="images/icons/icons8-sass-64.png"
+                  src="images/icons/icons8-sass.svg"
                   width="48"
                   height="48"
                   alt="sass icon"
@@ -109,21 +105,21 @@
                 href="https://getbootstrap.com/"
                 aria-label="Read more about Bootstrap"
                 ><img
-                  src="images/icons/icons8-bootstrap-48.png"
+                  src="images/icons/icons8-bootstrap.svg"
                   alt="bootstrap icon"
               /></a>
               <!-- React icon-->
               <a href="https://react.dev/" aria-label="Read more about React"
-                ><img src="images/icons/icons8-react-48.png" alt="react icon"
+                ><img
+                  src="images/icons/icons8-react-native.svg"
+                  alt="react icon"
               /></a>
               <!-- Node.js icon-->
               <a
                 href="https://nodejs.org/en/about"
                 aria-label="Read more about Node.js"
               >
-                <img
-                  src="images/icons/icons8-node-js-48.png"
-                  alt="node.js icon"
+                <img src="images/icons/icons8-nodejs.svg" alt="node.js icon"
               /></a>
               <!-- Express.js icon-->
               <a
@@ -133,7 +129,7 @@
                 <img
                   width="48"
                   height="48"
-                  src="images/icons/icons8-express-js-64.png"
+                  src="images/icons/icons8-express-js.svg"
                   alt="express.js icon"
               /></a>
               <!-- PostgreSQL icon-->
@@ -142,7 +138,7 @@
                 aria-label="Read more about PostgreSQL"
               >
                 <img
-                  src="images/icons/icons8-postgresql-48.png"
+                  src="images/icons/icons8-postgresql.svg"
                   alt="postgresql icon"
               /></a>
               <!-- Git icon-->
@@ -150,7 +146,7 @@
                 ><img
                   width="48"
                   height="48"
-                  src="images/icons/icons8-git-48.png"
+                  src="images/icons/icons8-git.svg"
                   alt="git icon"
               /></a>
               <!-- Mocha icon-->
@@ -175,233 +171,145 @@
               <!-- Jest icon-->
               <a href="https://jestjs.io/" aria-label="Read more about Jest">
                 <img
-                  src="images/icons/icons8-jest-can-collect-code-coverage-information-from-entire-projects-48.png"
+                  width="48"
+                  heigh="48"
+                  src="images/icons/jest-svgrepo-com.svg"
                   alt="jest icon"
               /></a>
             </div>
           </section>
         </div>
+
         <!-- My Projects section -->
         <div id="projects">
           <section id="projects-section" class="bubble">
-            <h2 id="projects" class="flex-container section-title">
-              My Projects
-            </h2>
-            <div class="flex-container projects-flexbox">
-              <!-- Reservation Project -->
-              <div id="reservations-app" class="project-flex-items">
-                <h4 class="project-title">
-                  Restaurant Reservations App |
-                  <a
-                    class="project-link"
-                    href="https://restaurant-res-frotn-end.onrender.com"
-                    aria-label="view live restaurant-reservations website"
-                    >Deployment</a
-                  >
-                  |
-                  <a
-                    class="project-link"
-                    href="https://github.com/MariahCasciola/restaurant-reservations"
-                    aria-label="view github of restaurant-reservations"
-                  >
-                    GitHub</a
-                  >
-                </h4>
-                <p>
-                  I created a RESTful API that allows users to create, read,
-                  update, and delete reservations and update occupied tables
-                  upon a guest's departure. I have implemented middleware
-                  functions to warn API users when they have made a bad request.
-                  This API connects to a user interface composed of React
-                  components designed with CSS and Bootstrap.
-                </p>
-                <h4 class="project-title">Technology:</h4>
-                <p>
-                  JavaScript ES6, React.js, Node.js, Express.js, Knex, HTML5,
-                  CSS3, Puppeteer, Bootstrap 5.3.0, VS Code, and Git.
-                </p>
+            <h2 id="projects" class="center section-title">My Projects</h2>
+            <div class="center projects-flexbox grid">
+              <!-- Tic Tac Toe project -->
+              <div class="project-flex-items bubble bubble-two">
+                <h4 class="center project-title">Single Player Tic Tac Toe</h4>
+                <a
+                  href="https://single-player-tic-tac-toe.vercel.app/"
+                  aria-label="Take a look at my tic-tac-toe project"
+                  class="center"
+                >
+                  <img
+                    id="tic-tac-toe-pic"
+                    class="image border"
+                    src="images/project-pics/tic-tac-toe.png"
+                    alt="Screenshot of Single Tic-tac-toe application"
+                  />
+                </a>
               </div>
-              <!-- Decoder Ring Project -->
-              <div id="decoder-ring" class="project-flex-items">
-                <h4 class="project-title">
-                  Decorder Ring |
-                  <a
-                    class="project-link"
-                    href="https://mariahcasciola.github.io/Decoder-ring/"
-                    aria-label="view decoder-ring live website"
-                    >Deployment</a
-                  >
-                  |
-                  <a
-                    class="project-link"
-                    href="https://github.com/MariahCasciola/Decoder-ring"
-                    aria-label="view github of decoder-ring"
-                    >GitHub</a
-                  >
-                </h4>
-                <p>
-                  I wrote three encoding and decoding JavaScript algorithms:
-                  Caesar Shift, Polybius Square, and Substitution Cipher.
-                </p>
-                <ul>
-                  <li>
-                    <span class="heart">&#128420;</span>Caesar will shift the
-                    alphabet by a number a user specifies to encode a message.
-                  </li>
-                  <li>
-                    <span class="heart">&#128420;</span>Polybius takes each
-                    letter in the alphabet and assigns a two-digit coordinate to
-                    each letter that will translate a message into a string of
-                    numbers.
-                  </li>
-                  <li>
-                    <span class="heart">&#128420;</span>Substitution Cipher
-                    requires a user to provide an alphabet of 26 characters to
-                    replace the English alphabet to encode and decode their
-                    messages.
-                  </li>
-                </ul>
 
-                <h4 class="project-title">Technology:</h4>
-                <p>
-                  JavaScript ES6, DOM Manipulation, HTML5, Bootstrap 5.3.0,
-                  Chai, VS Code, and Git.
-                </p>
+              <!-- Reservation Project -->
+              <div
+                id="reservations-app"
+                class="project-flex-items bubble bubble-two"
+              >
+                <h4 class="center project-title">Restaurant Reservations</h4>
+                <a
+                  href="https://restaurant-res-frotn-end.onrender.com/dashboard"
+                  aria-label="A link to my Restaurant reservations app"
+                  class="center"
+                >
+                  <img
+                    src="./images/project-pics/reservations.png"
+                    class="image border"
+                    alt="Screencap of a Restaurant Reservations application"
+                /></a>
               </div>
               <!-- We Love Movies Project-->
-              <div id="we-love-movies" class="project-flex-items">
-                <h4 class="project-title">
-                  We Love Movies API |
-                  <a
-                    class="project-link"
-                    href="https://we-love-movies-1pzh.onrender.com/movies"
-                    aria-label="view live we love movies api"
-                    >Deployment</a
-                  >
-                  |
-                  <a
-                    class="project-link"
-                    href="https://github.com/MariahCasciola/We-Love-Movies"
-                    aria-label="view github of restaurant-reservations"
-                  >
-                    GitHub</a
-                  >
-                </h4>
-                <p>
-                  I am a cinephile with a love for all sorts of niche movies. I
-                  love Studio Ghibli`s Spirited Away, BladeRunner, Rear Window,
-                  Spiderman: Into the Spider-Verse, and more. Please enjoy this
-                  list of movies I have compiled in this API! Sit back, grab
-                  some popcorn, and enjoy!
-                </p>
-                <h4 class="project-title">Technology:</h4>
-                <p>
-                  JavaScript ES6, Node.js, Express.js PostgreSQL, Knex,
-                  ElephantSQL, Render, Postman, JSON viewer, SuperTest, and
-                  VSCode.
-                </p>
+              <div
+                id="we-love-movies"
+                class="project-flex-items bubble bubble-two"
+              >
+                <h4 class="center project-title">We Love Movies API</h4>
+                <a
+                  href="https://we-love-movies-ui-9f0n.onrender.com/"
+                  aria-label="A link to my We Love Movies application"
+                  class="center"
+                  ><img
+                    class="image border"
+                    src="./images/project-pics/we-love-movies.png"
+                /></a>
               </div>
-              <!-- FlashCards Project -->
-              <div id="flashcards-app" class="project-flex-items">
-                <h4 class="project-title">
-                  FlashCards App |
-                  <a
-                    class="project-link"
-                    href="https://mariahs-flashcard-app.onrender.com"
-                    aria-label="view live flashcard-app website"
-                    >Deployment</a
-                  >
-                  |
-                  <a
-                    class="project-link"
-                    href="https://github.com/MariahCasciola/FlashCards-A-React-App"
-                    aria-label="view code of flash-card website on github"
-                    >GitHub</a
-                  >
-                </h4>
-                <p>
-                  I made a React app that allows users to create decks and
-                  cards. Currently, the deployed version of this project is UI,
-                  the database is in memory only, and an API is currently in
-                  development for this project.
-                </p>
-                <h4 class="project-title">Technology:</h4>
-                <p>
-                  JavaScript ES6, HTML5, CSS3, React.js, Node.js, Bootstrap
-                  5.3.0, Jest, VS Code, and Git.
-                </p>
+              <!-- Art Gallery  -->
+              <div
+                id="local-library-project"
+                class="project-flex-items bubble bubble-two"
+              >
+                <h4 class="center project-title">Art Gallery</h4>
+                <a
+                  href="https://art-gallery-gamma-one.vercel.app/"
+                  aria-label="A link to my Art Gallery application"
+                  class="center"
+                  ><img
+                    class="image border"
+                    src="./images/project-pics/art-gallery.png"
+                /></a>
               </div>
               <!-- Local Library project -->
-              <div id="local-library-project" class="project-flex-items">
-                <h4 class="project-title">
-                  Local Library Project |
-                  <a
-                    class="project-link"
-                    href="https://local-library-project-doj57c829-mariahcasciola.vercel.app/"
-                    aria-label="view live Local-Library-Project website"
-                    >Deployment</a
-                  >
-                  |
-                  <a
-                    class="project-link"
-                    href="https://github.com/MariahCasciola/Local-Library-Project"
-                    aria-label="view github of Local-Library-Project"
-                  >
-                    GitHub</a
-                  >
-                </h4>
-                <p>
-                  This project displays data from a mock Local Library. Using a
-                  boilerplate UI, I created higher-order functions to correctly
-                  display the information about the library's books, authors,
-                  and borrowers. I wrote fourteen different algorithms to
-                  manipulate three arrays.
-                </p>
-                <h4 class="project-title">Technology:</h4>
-                <p>JavaScript ES6, HTML5, CSS3, Chai, VS Code, and Git.</p>
+              <div
+                id="local-library-project"
+                class="project-flex-items bubble bubble-two"
+              >
+                <h4 class="center project-title">Local Library Project</h4>
+                <a
+                  href="https://local-library-project-nine.vercel.app/"
+                  aria-label="A link to my Local Library application"
+                  class="center"
+                  ><img
+                    class="image border"
+                    src="./images/project-pics/local-library.png"
+                /></a>
               </div>
             </div>
           </section>
         </div>
-        <!-- links section -->
-        <div id="links">
-          <section id="links-section" class="bubble">
-            <h3 class="flex-container section-title">My Links</h3>
-            <p>
-              <a
-                class="linked-in-git-hub-link"
-                href="https://www.linkedin.com/in/mariah-casciola/"
-                aria-label="view my linked in profile"
-                >LinkedIn</a
-              >
-            </p>
-            <p>
-              <a
-                class="linked-in-git-hub-link"
-                href="https://github.com/MariahCasciola"
-                aria-label="view my github profile"
-                >GitHub</a
-              >
-            </p>
-          </section>
-        </div>
+        <section id="about-me-section" class="bubble">
+          <!-- links section -->
+          <h2 class="center section-title">My Links</h2>
+          <div class="center">
+            <a
+              href="https://www.linkedin.com/in/mariah-casciola/"
+              aria-label="view my linked in profile"
+              ><img
+                height="100%"
+                width="100%"
+                src="images/icons/icons8-linkedin.svg"
+            /></a>
+            <a
+              class="linked-in-git-hub-link"
+              href="https://github.com/MariahCasciola"
+              aria-label="view my github profile"
+              ><img
+                height="48"
+                width="48"
+                src="images/icons/icons8-github.svg"
+                alt="github icon"
+            /></a>
+          </div>
+        </section>
       </div>
     </main>
-    <footer id="footer" class="footer">
-      <p>Created with</p>
-      <div class="flex-container tools">
+    <footer id="footer">
+      <h3>Created with</h3>
+      <div class="center tools">
         <img
-          src="images/icons/icons8-vs-code-48.png"
+          src="images/icons/icons8-visual-studio-code.svg"
           alt="visual studio code icon"
         />
+        <img src="images/icons/icons8-js.svg" alt="javascript icon" />
+        <img src="images/icons/icons8-html.svg" alt="html icon" />
+        <img src="images/icons/icons8-css.svg" alt="css icon" />
         <img
-          src="images/icons/icons8-javascript-48.png"
-          alt="javascript icon"
+          src="images/icons/icons8-github.svg"
+          width="48"
+          height="48"
+          alt="github icon"
         />
-        <img src="images/icons/icons8-html-48.png" alt="html icon" />
-        <img src="images/icons/icons8-css-48.png" alt="css icon" />
-        <img src="images/icons/icons8-github-50.png" alt="github icon" />
-        <img src="images/icons/icons8-icons8-48.png" alt="icons8 icon" />
+        <img src="images/icons/icons8-icons8.svg" alt="icons8 icon" />
       </div>
     </footer>
     <script src="./index.js"></script>

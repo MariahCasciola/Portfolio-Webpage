@@ -1,8 +1,4 @@
-const canvasOne = document.querySelector("#canvas-one");
-const canvasTwo = document.querySelector("#canvas-two");
-const ctxOne = canvasOne.getContext("2d");
-const ctxTwo = canvasTwo.getContext("2d");
+// TODO: create a hover affect
 
-const jsIconHover = document.querySelector("#js-icon");
-
-// TODO: create onFocus or onBlur event over personal profile image
+const javaScriptIcon = document.querySelectorAll("#javascript-icon");
+console.log(javaScriptIcon)
