@@ -34,6 +34,27 @@ body {
   display: block;
 }
 
+.menu {
+  position: absolute;
+  top: 0rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 0.5rem;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+.hamburger {
+  position: absolute;
+}
+
+.menu:hover nav {
+  display: flex;
+}
+
 nav ul li a {
   text-decoration: none;
 }
@@ -154,6 +175,15 @@ footer {
   margin: 0 5rem 0 5rem;
 }
 
+.disappear {
+  display: none;
+}
+
+.appear {
+  /* display: block; */
+  display: flex;
+}
+
 /* desktop view */
 @media all and (min-width: 480px) {
   .d-center {
@@ -200,11 +230,19 @@ footer {
   display: none;
 }
 
+.appear {
+  display: flex;
+}
+
 /* larger desktop view */
 @media all and (min-width: 1200px) {
   /* displays hover message*/
   .disappear {
     display: flex;
+  }
+
+  .appear {
+    display: none;
   }
 
   /*hover message  */
