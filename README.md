@@ -17,6 +17,7 @@ I love software engineering, Undertale, digital art, graphics, and purple. Welco
 ## TODO
 
 - [ ] Rewrite About section
+- [ ] Create absolute position class
 - [ ] Create back to top button
 - [ ] Take pictues of traditional art
 - [ ] Upload traditional art
